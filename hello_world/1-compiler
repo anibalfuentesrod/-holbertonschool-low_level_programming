@@ -1,2 +1,2 @@
 #!/bin/bash
-1-compiler=CFILE | gcc -c $CFILE -o 1-compiler
+1-compiler=CFILE | gcc -c $CFILE 
