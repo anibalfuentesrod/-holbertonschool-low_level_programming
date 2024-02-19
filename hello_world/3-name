@@ -1,0 +1,2 @@
+#!/bin/bash
+3-name=CFILE | gcc app.c $CFILE -o cisfun
