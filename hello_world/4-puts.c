@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-	char mensage = "\"Programming is like building a multilingual puzzle"
+	char mensage = \"Programming is like building a multilingual puzzle";
 		
 
-		puts=(mensaje) 
+		puts=(mensaje);
 
 	return 0;
 }
