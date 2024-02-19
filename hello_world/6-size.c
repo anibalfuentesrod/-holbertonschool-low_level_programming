@@ -6,11 +6,11 @@
 */
 int main(void)
 {
-char = one
-int = two
-long int = three
-long long int = four
-float = five
+char = one;
+int = two;
+long int = three;
+long long int = four;
+float = five;
 printf("size of char: %zu bytes\n", sizeof(char));
 printf("size of int: %zu bytes\n", sizeof(int));
 printf("size of long: %zu bytes\n", sizeof(long int));
