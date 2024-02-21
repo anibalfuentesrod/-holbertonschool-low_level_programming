@@ -12,9 +12,8 @@ char abc;
 
 for (abc = 'a'; abc <= 'z'; abc++)
 {
-    if (abc != 'q'&& abc != 'e')
-        
-	    putchar(abc);
+if (abc != 'q' && abc != 'e')
+putchar(abc);
 
 }
 putchar('\n');
