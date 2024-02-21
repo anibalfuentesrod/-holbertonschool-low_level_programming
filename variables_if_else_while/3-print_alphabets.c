@@ -7,18 +7,10 @@
 
 int main(void)
 {
-char abc;
-char Abc;
 
-for (abc = 'a'; abc <= 'z'; abc++)
-{
-	putchar(abc);
-}
-for (Abc = 'A'; Abc <= 'Z'; Abc++)
-{
-	putchar(Abc);
-}
-putchar('\n');
+	printf("I like pizza\n");
+	printf("its really good\n");
+
 return (0);
 
 
