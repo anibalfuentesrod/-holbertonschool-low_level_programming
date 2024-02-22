@@ -1,10 +1,10 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - making the loop
  *
  * Return: 0
 **/
-void print_until_newline(char *s);//ACEPTA EL STRING COMO UN ARGUMENT
 
 int main(void)
 {
