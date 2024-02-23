@@ -7,13 +7,8 @@
 **/
 int print_last_digit(int number)
 {
-	if (number == 1050)
-	{
-		_putchar(number % 10);
-	}
-	else
-	{
-		_putchar('\n');
-	}
+int last = number % 10;
+if (last < 0)
+	_putchar(last + '0');
 return (0);
 }
