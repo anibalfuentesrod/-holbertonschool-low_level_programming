@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - making the loop
  *
@@ -7,12 +7,13 @@
 
 int main(void)
 {
-char str[100] = "_putchar";
-for (int i = 0; i <= 8; i++)
-{
-	putchar(str[i]);
-
-}
-putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
 return (0);
 }
