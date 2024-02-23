@@ -2,7 +2,7 @@
 /**
  * _isalpha - check the code
  *
- * @c 
+ * @c
  * Return: 1 if c is a letter else 0
 **/
 int _isalpha(int c)
