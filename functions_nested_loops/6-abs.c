@@ -3,14 +3,18 @@
  * _abs - making something with absolute value
  *
  *@num: la variable
- * Return: 0
+ * Return: the value 
 **/
 int _abs(int num)
 {
 if (num < 0)
 {
-	_putchar(num = -num);
+	return (-num);
+	_putchar(num);
+}
+else{
+	return (num);
+	_putchar(num);
 }
 
-return (0);
 }
