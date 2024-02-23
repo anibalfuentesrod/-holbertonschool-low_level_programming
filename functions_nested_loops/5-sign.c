@@ -2,7 +2,8 @@
 /**
  * print_sign - name of the prototype
  *
- * @n - is a variable
+ * @n: is a variable
+ *
  * Return: 1, 0, -1
 */
 int print_sign(int n)
