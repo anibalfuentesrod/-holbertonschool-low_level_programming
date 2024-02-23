@@ -7,7 +7,7 @@
 **/
 int print_last_digit(int number)
 {
-	if (number < 1050)
+	if (number == 1050)
 	{
 		_putchar(number % 10);
 	}
