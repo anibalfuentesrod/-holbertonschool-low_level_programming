@@ -12,7 +12,7 @@ int j;
 int k;
 for (i = 0; i <= 9; i++)
 {
-_putchar('0')
+_putchar('0');
 for (j = 1; j <= 9; j++)
 {
 _putchar(',');
