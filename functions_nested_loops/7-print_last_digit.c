@@ -13,6 +13,5 @@ if (last < 0)
 {
 	_putchar(last + '0');
 }
-_putchar('\n');
 return (last);
 }
