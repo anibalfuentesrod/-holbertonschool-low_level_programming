@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_most_numbers - tthe prototype of 4
+ * print_most_numbers - the prototype of
  *
- * 
- * Return: 0
+ * Return:0
 **/
+
 void print_most_numbers(void)
 {
 int n;
