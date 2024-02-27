@@ -20,4 +20,8 @@ int l;
 			}
 		_putchar('\n');
 	}
+	else
+	{
+		_putchar('\n');
+	}
 }
