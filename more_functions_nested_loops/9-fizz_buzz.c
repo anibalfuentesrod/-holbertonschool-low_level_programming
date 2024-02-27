@@ -14,7 +14,7 @@ int n;
 		{
 			printf("Buzz");
 		}
-		else if ((n % 3 == 0) && (n %5 == 0))
+		else if ((n % 3 == 0) && (n % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
@@ -32,5 +32,5 @@ int n;
 		}
 	}
 	printf("\n");
-return(0);
+return  (0);
 }
