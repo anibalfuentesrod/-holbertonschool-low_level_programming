@@ -19,10 +19,10 @@ int y;
 			}
 			_putchar('\n');
 
-			if (size <= 0)
-			{
-				_putchar('\n');
-			}
 		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
