@@ -18,7 +18,7 @@ int l;
 			{
 				_putchar('\n');
 			}
-		_putchar('\n');
+					_putchar('\n');
 	}
 	else
 	{
