@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strlen;
+ * _strlen - the name
  *
  *@s: the variable
  *
@@ -14,5 +14,5 @@ int i;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
-return(i);
+return (i);
 }
