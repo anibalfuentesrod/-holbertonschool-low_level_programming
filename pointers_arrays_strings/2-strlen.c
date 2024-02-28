@@ -5,7 +5,7 @@
  *
  *@s: the variable
  *
- * Return:
+ * Return: i
 **/
 
 int _strlen(char *s)
