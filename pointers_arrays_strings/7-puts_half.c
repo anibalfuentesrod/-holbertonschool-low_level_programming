@@ -14,7 +14,6 @@ int i = 0;
 int half;
 int st;
 	while (str[i] != '\0')
-	
 		i++;
 			len = i;
 				half = (len - 1) / 2;
