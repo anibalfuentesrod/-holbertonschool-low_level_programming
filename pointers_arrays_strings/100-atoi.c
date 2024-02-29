@@ -4,7 +4,7 @@
  *
  * @s: the name
  *
- * Return:
+ * Return: num * sign
 **/
 
 int _atoi(char *s)
