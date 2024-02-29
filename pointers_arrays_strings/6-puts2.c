@@ -14,7 +14,6 @@ void puts2(char *str)
 	if (len != 8)
 	{
 		while (str[len] != '\0')
-	
 		len++;
 
 		for (i = 0; i < len; i += 2)
