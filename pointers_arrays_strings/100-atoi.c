@@ -3,7 +3,7 @@
  * _atoi - the name
  *
  * @s: the name
- * 
+ *
  * Return:
 **/
 
@@ -21,7 +21,6 @@ do {
 		num = (num * 10) + (*s - '0');
 
 	else if (num > 0)
-		
 		break;
 
 } while (*s++);
