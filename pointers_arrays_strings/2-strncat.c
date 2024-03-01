@@ -11,9 +11,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *ogdes = dest;
-	size_t i = 0;
-	
+char *ogdes = dest;
+size_t i = 0;
 	while (*dest != '\0')
 	{
 		dest++;
