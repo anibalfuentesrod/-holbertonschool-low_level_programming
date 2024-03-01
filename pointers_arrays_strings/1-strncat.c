@@ -6,20 +6,20 @@
  * @dest: variable name
  * @src: varibale name
  * @n: the num variable
- * Return:
+ * Return: ogdes
 **/
 
 char *_strncat(char *dest, char *src, int n)
 {
 	char *ogdes = dest;
 	size_t i = 0;
-	n = 0;
+	
 	while (*dest != '\0')
 	{
 		dest++;
 	}
 
-	while ((size_t)i < (size_t) n && *src != '\0')
+	while ((size_t) i < (size_t) n && *src != '\0')
 	{
 		*dest++ = *src++;
 
