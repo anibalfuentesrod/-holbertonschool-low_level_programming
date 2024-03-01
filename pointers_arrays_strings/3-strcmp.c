@@ -4,7 +4,7 @@
  *
  * @s1: so....the first string
  * @s2: so....the second string
- * Return:
+ * Return: jajja 0
 **/
 int _strcmp(char *s1, char *s2)
 {
