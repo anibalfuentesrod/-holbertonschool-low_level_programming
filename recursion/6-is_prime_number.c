@@ -20,7 +20,7 @@ int is_prime_number(int n)
  *
  **/
 int prime(int n, int divi)
-
+{
 	if (n <= 1)
 	{
 		return (0);
