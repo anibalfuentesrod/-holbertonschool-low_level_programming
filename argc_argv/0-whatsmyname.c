@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - the namo of function
- * @argc: the argument count
- * @argv: the argument vector
+ * main - the name of function
+ *
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
 **/
 int main(int argc, char *argv[])
@@ -12,7 +13,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("argv[%d] = %s\n", i, argv[i]);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
