@@ -32,9 +32,9 @@ char *_strdup(char *str)
 		{
 			duplicate[i] = str[i];
 		}
-
-		return (duplicate);
-
+		
 		duplicate[i] = '\0';
+		
+		return (duplicate);
 
 }
