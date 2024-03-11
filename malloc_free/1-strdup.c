@@ -6,7 +6,7 @@
  *
  * @str: the name of function
  *
- * Return: NULL if str = NULL
+ * Return: NULL if str = NULL and duplicate
 **/
 char *_strdup(char *str)
 {
@@ -29,8 +29,6 @@ char *_strdup(char *str)
 		{
 			duplicate[i] = str[i];
 		}
-
-					duplicate[i] = '\0';
-
-					return (duplicate);
+		return (duplicate);
+		duplicate[i] = '\0';
 }
