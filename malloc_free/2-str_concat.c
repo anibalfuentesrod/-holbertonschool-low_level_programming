@@ -2,7 +2,6 @@
 #include <stdlib.h>
 /**
  * str_concat - the name of function
- *
  * @s1: string one
  * @s2: string two
  * Return: NULL
@@ -33,8 +32,11 @@ char *str_concat(char *s1, char *s2)
 		lentwo++;
 	}
 	suma = lenone + lentwo + 1;
-
 	concatenated = malloc(sizeof(char) * suma);
+	if (concatenated == 0)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < lenone; i++)
 	{
@@ -45,6 +47,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenated[lenone + i] = s2[i];
 	}
-
 	return (concatenated);
 }
