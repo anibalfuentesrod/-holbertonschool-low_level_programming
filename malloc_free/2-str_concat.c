@@ -9,17 +9,11 @@
 **/
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
+	char *concatenated;
+	int suma = 0;
+	int i = 0;
 	int lenone = 0;
 	int lentwo = 0;
-
-	char *concatenated = (char *)malloc((lenone + lentwo + 1) * sizeof(char));
-	{
-		if (concatenated == NULL)
-		{
-			return (NULL);
-		}
-	}
 
 	if (s1 == NULL)
 	{
@@ -38,15 +32,18 @@ char *str_concat(char *s1, char *s2)
 	{
 		lentwo++;
 	}
+	suma = lenone + lentwo + 1;
+
+	concatenated = malloc(sizeof(char) * suma);
 
 	for (i = 0; i < lenone; i++)
 	{
 		concatenated[i] = s1[i];
 	}
 
-	for (j = 0; j < lentwo; j++)
+	for (i = 0; i < lentwo; i++)
 	{
-		concatenated[lenone + j] = s2[j];
+		concatenated[lenone + i] = s2[i];
 	}
 
 	return (concatenated);
