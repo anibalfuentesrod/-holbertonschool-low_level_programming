@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+ * struct dog - the name of structure
+ * @name: the name of dog
+ * @age: age of dog duhhh
+ * @owner: the owner of the dug obvio cb
+**/
 struct dog
 {
 	char *name;
