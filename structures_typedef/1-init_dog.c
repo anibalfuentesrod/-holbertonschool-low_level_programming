@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * init_dog - the name of function
- * dog - the dog ajajaj
  * @d: the structure
  * @name:name of aaaaa i dont know bro
  * @age: age of...you know
