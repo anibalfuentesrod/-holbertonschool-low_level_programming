@@ -6,6 +6,7 @@
  * @name:name of aaaaa i dont know bro
  * @age: age of...you know
  * @owner: the owner
+ * struct dog - the structure of dog
 **/
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
