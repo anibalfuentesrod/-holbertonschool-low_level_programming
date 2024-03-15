@@ -5,6 +5,7 @@
  * @name: the name of dog
  * @age: age of dog duhhh
  * @owner: the owner of the dug obvio cb
+ * @d: the pointer that has store the structure
 **/
 struct dog
 {
@@ -15,4 +16,5 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
