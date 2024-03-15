@@ -2,6 +2,24 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ * _strncpy - the name of function
+ * @dest: the destination
+ * @src: the source that you whant to copy
+ * Return: dest
+**/
+char *_strncpy(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+		return (dest);
+}
+/**
  * _strlen - this is to copy the string
  *
  * @s: the variable name
@@ -57,8 +75,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new_dog->age = age;
-	strcpy(new_dog->name, name);
-	strcpy(new_dog->owner, owner);
+	_strncpy(new_dog->name, name);
+	_strncpy(new_dog->owner, owner);
 
 	return (new_dog);
 }
