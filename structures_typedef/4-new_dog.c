@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strlen - this is to copy the string
  *
@@ -56,8 +57,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new_dog->age = age;
-	new_dog->name = name;
-	new_dog->owner = owner;
+	strcpy(new_dog->name, name);
+	strcpy(new_dog->owner, owner);
 
 	return (new_dog);
 }
