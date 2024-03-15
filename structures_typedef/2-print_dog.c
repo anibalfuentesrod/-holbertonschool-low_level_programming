@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_dog - the name of function
- *
+ * @d: the pointer where is store the structre dog
 **/
 void print_dog(struct dog *d)
 {

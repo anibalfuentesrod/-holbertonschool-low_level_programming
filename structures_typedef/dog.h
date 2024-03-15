@@ -5,7 +5,6 @@
  * @name: the name of dog
  * @age: age of dog duhhh
  * @owner: the owner of the dug obvio cb
- * @d: the pointer that has store the structure
 **/
 struct dog
 {
