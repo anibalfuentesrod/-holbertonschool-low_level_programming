@@ -1,6 +1,19 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
+/**
+ * _strlen - this is to copy the string
+ *
+ * @s: the variable name
+ * Return: i
+**/
+int _strlen(char *s)
+{
+	int i;
+		for (i = 0; s[i] != '\0'; i++)
+		{
+		}
+		return (i);
+}
 /**
  * new_dog - the name of function
  * @name: the name of dog
@@ -10,6 +23,8 @@
 **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	int len_name, len_owner;
+
 	dog_t *new_dog;
 
 	if (name == NULL || owner == NULL)
@@ -19,14 +34,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_dog == NULL)
 		return (NULL);
 
-	new_dog->name = strdup(name);
+	len_name = _strlen(name);
+
+	new_dog->name = malloc(len_name * sizeof(char));
 	if (new_dog->name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
 
-	new_dog->owner = strdup(owner);
+	len_owner = _strlen(owner);
+
+	new_dog->owner = malloc(len_owner * sizeof(char));
 	if (new_dog->owner == NULL)
 	{
 		free(new_dog->name);
