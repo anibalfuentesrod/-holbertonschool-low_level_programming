@@ -21,33 +21,28 @@ dog_t *new_dog(char *name, float age, char *owner)
 			fiona = malloc(sizeof(dog_t));
 				if (fiona == NULL)
 					return (NULL);
-				fiona->name = malloc(name_len * sizeof(fiona->name));
+		fiona->name = malloc(name_len * sizeof(fiona->name));
 		if (fiona->name == NULL)
 		{
 			free(fiona);
 			return (NULL);
 		}
 
-	for (i = 0; i < name_len; i++)
-		fiona->name[i] = name[i];
-			if (fiona->name == NULL)
-			{
-				free(fiona->name);
-				free(fiona);
-				return (NULL);
-			}
-			fiona->age = age;
-		fiona->owner = malloc(owner_len * sizeof(fiona->owner));
-		if (fiona->owner == NULL)
-			return (NULL);
+			for (i = 0; i < name_len; i++)
+				fiona->name[i] = name[i];
 
-		for (i = 0; i < owner_len; i++)
-			fiona->owner[i] = owner[i];
+	fiona->age = age;
+
+	fiona->owner = malloc(owner_len * sizeof(fiona->owner));
 		if (fiona->owner == NULL)
 		{
 			free(fiona->name);
 			free(fiona);
 			return (NULL);
 		}
+
+
+		for (i = 0; i < owner_len; i++)
+			fiona->owner[i] = owner[i];
 	return (fiona);
 }
