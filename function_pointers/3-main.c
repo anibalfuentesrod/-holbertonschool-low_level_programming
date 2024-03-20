@@ -1,45 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- * @argc: Number of command line argument
- * @argv: Array containing the command line
- * Return: 0 on succes, otherwise 98 for wrong number of arguments,
- * 99 for invalid operator, and 100 for division/modulu by zero
- */
-
+  * main - the main
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: 0
+  */
 int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int (*oprt)(int, int);
 
-	if ((argc) != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
-
 		exit(98);
 	}
 
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
+	oprt = get_op_func(argv[2]);
 
-		if (get_op_func(argv[2]) == NULL)
-		{
-			printf("Error\n");
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
-			exit(99);
-		}
-
-		if (num2 == 0 && (*argv[2] == '%' || *argv[2] == '/'))
-		{
-			printf("Error\n");
-
-			exit(100);
-		}
-
-		printf("%d\n", (get_op_func(argv[2])(num1, num2)));
-
-		return (0);
-
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
