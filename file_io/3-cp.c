@@ -78,14 +78,15 @@ int copy_files(const char *src, const char *dest)
 	if (close(fd_from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
-		return (1);
+		close(fd_to);
+		return (100);
 	}
 	if (close(fd_to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
-		return (1);
+		return (101);
 	}
-	return (0);
+return (0);
 }
 /**
  * main - the main duhh, and entry point of the program
