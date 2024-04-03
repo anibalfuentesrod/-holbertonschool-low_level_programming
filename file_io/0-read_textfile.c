@@ -8,16 +8,15 @@
 **/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, bytes_read, bytes_written;
+	size_t i = 0;
+	int fd, bytes_read = 0, bytes_written;
 	char *buffer;
 
 	buffer = malloc(sizeof(char) * letters);
-
 	if (filename == NULL)
 		return (0);
 
 	fd = open(filename, O_RDONLY);
-
 	if (fd == -1)
 		return (0);
 
@@ -26,10 +25,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	memset(buffer, 0, letters);
-
-		bytes_read = read(fd, buffer, letters);
-
+	for (i = 0; i < letters; i++)
+	{
+		buffer[i] = 0;
+	}
+	bytes_read = read(fd, buffer, letters);
 	if (bytes_read == -1)
 	{
 		free(buffer);
