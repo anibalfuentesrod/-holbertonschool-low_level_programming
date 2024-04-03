@@ -31,6 +31,12 @@ int copy_files(const char *src, const char *dest)
 	ssize_t bytes_read, bytes_written = 0;
 	char buffer[BUFFER_SIZE];
 
+	if (strcmp(src,dest) == 0)
+	{
+		dprintf(STDERR_FILENO, "Error: '%s' and '%s' are the same\n", src, dest);
+		return (1);
+	}
+
 	fd_from = open(src, O_RDONLY);
 	if (fd_from == -1)
 	{
