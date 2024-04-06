@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#define BUFSIZE BUFSIZ
 /**
   * main - the mf main duhhh
   * @ac: account ?? accions ?? ac air ?? nahh dunno
